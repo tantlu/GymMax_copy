@@ -1,0 +1,67 @@
+.slide {
+    position: relative;
+    width: 1920px;
+    z-index: 998;
+
+    &-img {
+        width: 100%;
+        img{ 
+            width: 100%;
+        }
+    }
+
+    &-content {
+        position: absolute;
+        top: 32%;
+        left: 19%;
+        font-family: $fonFamily;
+        color: $mainColor;
+        width: 30%;
+
+        .slide-title {
+            margin-left: 7px;
+            font-family: $fonFamily;
+            font-size: 62px;
+            font-weight: bold;
+            line-height: 1.1;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .slide-subtitle {
+            margin-top: -9px;
+            margin-left: 9px;
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 1.2;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .slide-desc {
+            font-size: 14px;
+            line-height: 1.741;
+            margin-bottom: 65px;
+            margin-left: 11px;
+            margin-top: -6px;
+        }
+
+        .btn-slide {
+            font-size: 14px;
+            font-family: "Myriad Pro";
+            color: $mainColor;
+            line-height: 1.714;
+            margin-left: 10px;
+            padding: 15px 55px;
+            text-align: center;
+            border: 1px solid;
+            border-color: rgb(255, 255, 255);
+            background-color: rgba(221, 47, 49, 0);
+            cursor: pointer;
+
+            &:hover {
+                background-color: red;
+            }
+        }
+    }
+}

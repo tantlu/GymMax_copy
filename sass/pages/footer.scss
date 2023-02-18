@@ -1,0 +1,66 @@
+.footer {
+    background-color: rgb(34, 34, 34);
+    margin-top: 105px;
+    padding-bottom: 50px;
+    &-top {
+        text-align: center;
+
+        img {
+            margin-top: 100px;
+        }
+
+        p {
+            margin-top: 25px;
+            font-size: 14px;
+            font-family: $fonFamily;
+            color: rgb(119, 119, 119);
+            line-height: 1.714;
+
+
+        }
+
+        .social {
+            margin-top:40px;
+            display: flex;
+            justify-content: center;
+
+            &-item {
+                padding: 20px;
+                font-size: 18px;
+                color: rgb(119, 119, 119);
+                line-height: 1.667;
+            }
+        }
+    }
+}
+
+.footer-bot {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+
+    .contact {
+        h1 {
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            line-height: 1.667;
+        }
+
+        ul {
+            li {
+                display: flex;
+                text-align: center;
+                font-size: 14px;
+                font-family: "Poppins";
+                color: rgb(119, 119, 119);
+                line-height: 2.857;
+                i{
+                    align-items: center;
+                    display: flex;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+.tabs {
+    min-width: 320px;
+    max-width: 1170px;
+    margin: -102px auto;
+    background: #fff;
+
+    input {
+        display: none;
+    }
+
+    .next-tabs {
+        display: none;
+        padding: 20px 0 0;
+        border-top: 1px solid #ddd;
+    }
+
+    label {
+        display: inline-block;
+        margin: 0 0 -1px;
+        padding: 15px 25px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.333;
+        text-align: left;
+
+    }
+
+    label:before {
+        font-family: $fonFamily;
+        font-weight: normal;
+        margin-right: 10px;
+    }
+
+
+
+    label:hover {
+        color: #888;
+        cursor: pointer;
+    }
+
+    input:checked+label {
+        color: rgb(221, 47, 49);
+        border-bottom: 1px solid rgb(221, 47, 49);
+    }
+
+
+}
+
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3 {
+    display: block;
+}
+
+.next-tabs {
+    .product-list {
+        .product-item {
+            margin-top: 30px;
+            padding-bottom: 76px;
+            .product-inner {
+                padding: 15px;
+                position: relative;
+                .btn-icon {
+                    display: none;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    z-index: 3;
+
+                    i {
+                        display: block;
+                        color: rgb(119, 119, 119);
+                        font-size: 16px;
+                        padding: 10px;
+                        border-radius: 5px 0px;
+                        margin-bottom: 15px;
+                        border: 1px solid rgb(221, 221, 221);
+                        transition: 0.3s;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: rgb(221, 47, 49);
+                            color: white;
+                        }
+                    }
+                }
+
+                .product-img {
+                    text-align: center;
+                   
+                }
+
+                .product-content {
+                    font-size: 14px;
+                    font-family: $fonFamily;
+                    position: absolute;
+                    z-index: 999;
+                    h4{
+                        font-weight: 400;
+                    }
+                    p{
+                        font-weight: 600;
+                    }
+                }
+                &:hover img {
+                    transform: scale(1.2);
+                    transition: all 0.5s;
+                }
+                &:hover {
+                    .btn-icon{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

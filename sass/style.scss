@@ -1,0 +1,16 @@
+//import 
+@import "../sass/source/mixins";
+@import "../sass/source/variables";
+
+// header
+@import "../sass/pages/header.scss";
+@import "../sass/pages/footer.scss";
+@import "../sass/content/defaut.scss";
+@import "../sass/pages/comment.scss";
+// content
+@import "../sass/content/slide.scss";
+@import "../sass/content/product.scss";
+@import "../sass/content/banner.scss";
+
+//reponsive
+@import "../sass/pages/reponsive.scss";
